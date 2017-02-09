@@ -152,6 +152,13 @@ abstract class Manialink
 		end(self::$parentFrames)->setId($id);
 	}
 
+        final static function setFrameAttributes($attributes) {
+            $frame = end(self::$parentNodes);
+            foreach ($attributes as $key => $value) {
+                $frame->setAttribute($key, $value);
+            }
+        }
+
 	final static function setFrameScriptEvents($scriptEvents = 1)
 	{
 		$frame = end(self::$parentNodes);

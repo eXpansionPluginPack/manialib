@@ -27,8 +27,8 @@ abstract class Component
 	protected $valign;
 	protected $halign;
 	protected $relativeHalign;
-	protected $relativeValign;
-	protected $scriptEvents;
+	protected $relativeValign;        
+        protected $scriptEvents;
 	
         /**
          * @var array 
